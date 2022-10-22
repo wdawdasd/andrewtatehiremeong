@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap");
+			body {
+				font-family: "Roboto Mono", monospace;
+				display: grid;
+				grid-template-columns: 50% 50%;
+				grid-template-rows: 25% 25% 25% 25%;
+				gap: 0px 0px;
+				grid-template-areas:
+					"a a"
+					"b b"
+					". ."
+					". .";
+				background-color: #fdfffc;
+				height: 100%;
+				width: 100%;
+				overflow-x: hidden;
+			}
+			h1 {
+				font-weight: 700;
+			}
+			h2 {
+				font-weight: 600;
+			}
+			p {
+				font-weight: 400;
+				font-size: 1.2rem;
+			}
+			header {
+				padding: 2rem;
+				grid-area: a;
+                font-size: 2rem;
+			}
+			#fancytext {
+				color: #47e5bc;
+			}
+			section {
+				padding-top: 2rem;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				padding-bottom: 1rem;
+				grid-area: b;
+				text-align: center;
+			}
+			#gold {
+				color: #ff9f1c;
+			}
+			#red {
+				color: #e71d36;
+				font-size: 20px;
+				font-weight: 600;
+			}
+			#strike {
+				text-decoration: line-through;
+				text-decoration-thickness: 0.25rem;
+			}
+			.stats {
+				display: grid;
+				grid-template-columns: 33% 33% 33%;
+				grid-template-rows: 1fr 1fr 1fr;
+				gap: 0px 0px;
+				grid-template-areas:
+					"d e f"
+					"d e f"
+					"d e f";
+				overflow: hidden;
+				text-align: center;
+				place-items: center;
+			}
+			.money {
+				width: 10em;
+				height: 10em;
+				text-align: center;
+				grid-area: d;
+				padding: 1rem;
+			}
+			.money2 {
+				grid-area: e;
+			}
+			.money2,
+			.money3 {
+				width: 10em;
+				height: 10em;
+				text-align: center;
+				padding: 1rem;
+			}
+			.money3 {
+				grid-area: f;
+			}
+			.underline {
+				text-decoration-line: underline;
+				text-decoration-style: "solid";
+				text-decoration-color: rgba(14, 142, 240, 0.72);
+				text-decoration-thickness: 5px;
+			}
+			.mid {
+                width: 10rem;
+            }
+            ul {
+                width: 15rem;
+                margin: 0 auto;
+                line-height: 1.8;
+                font-size: 1.2rem;
+            }
+            .nomargin {
+                margin: 1px;
+            }
+            a {
+                color:#000000;
+                padding: 1rem;
+            }
